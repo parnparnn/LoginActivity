@@ -3,6 +3,7 @@ package com.example.loginactivity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                         Log.d("MainActivity","username = " + username + " password = " + password);
                         try {
                             run();
+                            Intent intent = new Intent(MainActivity.this,ListViewActivity.class);
+                            startActivity(intent);
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
