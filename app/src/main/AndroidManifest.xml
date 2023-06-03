@@ -16,6 +16,12 @@
         android:theme="@style/Theme.LoginActivity"
         tools:targetApi="31">
         <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertionActivity"
+            android:exported="false" />
+        <activity
             android:name=".InsertionActiivty"
             android:exported="false" />
         <activity

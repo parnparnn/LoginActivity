@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "06747f1c-81ad-48ec-b6a8-0fb9784b52e0",
+		"name": "KMITL Android Dev Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "746277"
+	},
+	"item": [
+		{
+			"name": "STD Items",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://demo.hashup.tech/std/items?std_id=100",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"hashup",
+						"tech"
+					],
+					"path": [
+						"std",
+						"items"
+					],
+					"query": [
+						{
+							"key": "std_id",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create STD Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "std_id",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "field_a",
+							"value": "a",
+							"type": "text"
+						},
+						{
+							"key": "field_b",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "field_c",
+							"value": "c",
+							"type": "text"
+						},
+						{
+							"key": "field_d",
+							"value": "d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.hashup.tech/std/items",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"hashup",
+						"tech"
+					],
+					"path": [
+						"std",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit STD Item by Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "std_id",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "field_a",
+							"value": "abac",
+							"type": "text"
+						},
+						{
+							"key": "field_b",
+							"value": "b",
+							"type": "text"
+						},
+						{
+							"key": "field_c",
+							"value": "c",
+							"type": "text"
+						},
+						{
+							"key": "field_d",
+							"value": "d",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://demo.hashup.tech/std/items/1",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"hashup",
+						"tech"
+					],
+					"path": [
+						"std",
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete STD Item by Id Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://demo.hashup.tech/std/items/1",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"hashup",
+						"tech"
+					],
+					"path": [
+						"std",
+						"items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

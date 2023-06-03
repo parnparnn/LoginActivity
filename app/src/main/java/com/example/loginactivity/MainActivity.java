@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             run();
                             Intent intent = new Intent(MainActivity.this,ListViewActivity.class);
+                            intent.putExtra("Username",username);
                             startActivity(intent);
                         } catch (IOException e) {
                             throw new RuntimeException(e);
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Log.d("MainActivity",myResponse);
+                       // Log.d("MainActivity",myResponse);
 
                     }
                 });
